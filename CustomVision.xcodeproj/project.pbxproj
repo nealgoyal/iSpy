@@ -14,8 +14,9 @@
 		5EBF651C1F0AA47700BCD353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBF651A1F0AA47700BCD353 /* LaunchScreen.storyboard */; };
 		76B5ACDE1F159C7500EE183D /* BubbleLabelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5ACDD1F159C7500EE183D /* BubbleLabelLayer.swift */; };
 		76C510BC1F1587C60049422A /* BubbleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C510BB1F1587C60049422A /* BubbleLayer.swift */; };
-		7972666B204B1B1300AA0C05 /* Objects.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666A204B1B1300AA0C05 /* Objects.mlmodel */; };
-		7972666D204B1E0B00AA0C05 /* Fruit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666C204B1E0B00AA0C05 /* Fruit.mlmodel */; };
+		79726670204B3FC200AA0C05 /* Fruit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666E204B3FC200AA0C05 /* Fruit.mlmodel */; };
+		79726671204B3FC200AA0C05 /* Objects.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666F204B3FC200AA0C05 /* Objects.mlmodel */; };
+		79726673204B405A00AA0C05 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79726672204B405A00AA0C05 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		5EBF651D1F0AA47700BCD353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B5ACDD1F159C7500EE183D /* BubbleLabelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLabelLayer.swift; sourceTree = "<group>"; };
 		76C510BB1F1587C60049422A /* BubbleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLayer.swift; sourceTree = "<group>"; };
-		7972666A204B1B1300AA0C05 /* Objects.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Objects.mlmodel; path = ../../Objects.mlmodel; sourceTree = "<group>"; };
-		7972666C204B1E0B00AA0C05 /* Fruit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Fruit.mlmodel; path = "../../cognitive-services-ios-customvision-sample-master 2/CustomVision/Fruit.mlmodel"; sourceTree = "<group>"; };
+		7972666E204B3FC200AA0C05 /* Fruit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Fruit.mlmodel; sourceTree = "<group>"; };
+		7972666F204B3FC200AA0C05 /* Objects.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Objects.mlmodel; sourceTree = "<group>"; };
+		79726672204B405A00AA0C05 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../../../../Downloads/MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +67,12 @@
 				5EBF65111F0AA47700BCD353 /* AppDelegate.swift */,
 				5EBF65131F0AA47700BCD353 /* ViewController.swift */,
 				5EBF65151F0AA47700BCD353 /* Main.storyboard */,
-				7972666C204B1E0B00AA0C05 /* Fruit.mlmodel */,
 				5EBF65181F0AA47700BCD353 /* Assets.xcassets */,
-				7972666A204B1B1300AA0C05 /* Objects.mlmodel */,
 				5EBF651A1F0AA47700BCD353 /* LaunchScreen.storyboard */,
+				79726672204B405A00AA0C05 /* MobileNet.mlmodel */,
 				5EBF651D1F0AA47700BCD353 /* Info.plist */,
+				7972666E204B3FC200AA0C05 /* Fruit.mlmodel */,
+				7972666F204B3FC200AA0C05 /* Objects.mlmodel */,
 				76C510BB1F1587C60049422A /* BubbleLayer.swift */,
 				76B5ACDD1F159C7500EE183D /* BubbleLabelLayer.swift */,
 			);
@@ -151,8 +154,9 @@
 				76C510BC1F1587C60049422A /* BubbleLayer.swift in Sources */,
 				76B5ACDE1F159C7500EE183D /* BubbleLabelLayer.swift in Sources */,
 				5EBF65121F0AA47700BCD353 /* AppDelegate.swift in Sources */,
-				7972666B204B1B1300AA0C05 /* Objects.mlmodel in Sources */,
-				7972666D204B1E0B00AA0C05 /* Fruit.mlmodel in Sources */,
+				79726673204B405A00AA0C05 /* MobileNet.mlmodel in Sources */,
+				79726670204B3FC200AA0C05 /* Fruit.mlmodel in Sources */,
+				79726671204B3FC200AA0C05 /* Objects.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
