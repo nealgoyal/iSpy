@@ -9,3 +9,4 @@ Play scavenger hunt on your phone! Given different household items, race against
 All the following information is already included in the repository. Here is the documentation for the services used on the application: 
 * Microsoft's [Azure](https://azure.microsoft.com/en-us/services/cognitive-services/directory/vision/) for Real-Time Classification
 * Apple's [CoreML](https://developer.apple.com/machine-learning/) for Machine Learning
+* [ProgressHUD](https://github.com/relatedcode/ProgressHUD) for Correct Answers
