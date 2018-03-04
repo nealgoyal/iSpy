@@ -14,6 +14,9 @@
 		5EBF651C1F0AA47700BCD353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBF651A1F0AA47700BCD353 /* LaunchScreen.storyboard */; };
 		76B5ACDE1F159C7500EE183D /* BubbleLabelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5ACDD1F159C7500EE183D /* BubbleLabelLayer.swift */; };
 		76C510BC1F1587C60049422A /* BubbleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C510BB1F1587C60049422A /* BubbleLayer.swift */; };
+		794275AB204C690B00E41145 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794275A7204C690A00E41145 /* ProgressHUD.bundle */; };
+		794275AC204C690B00E41145 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 794275A8204C690A00E41145 /* ProgressHUD.m */; };
+		794275AD204C690B00E41145 /* ProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 794275A9204C690B00E41145 /* ProgressHUD */; };
 		79726670204B3FC200AA0C05 /* Fruit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666E204B3FC200AA0C05 /* Fruit.mlmodel */; };
 		79726671204B3FC200AA0C05 /* Objects.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666F204B3FC200AA0C05 /* Objects.mlmodel */; };
 		79726673204B405A00AA0C05 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79726672204B405A00AA0C05 /* MobileNet.mlmodel */; };
@@ -30,6 +33,11 @@
 		5EBF651D1F0AA47700BCD353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76B5ACDD1F159C7500EE183D /* BubbleLabelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLabelLayer.swift; sourceTree = "<group>"; };
 		76C510BB1F1587C60049422A /* BubbleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleLayer.swift; sourceTree = "<group>"; };
+		794275A6204C690900E41145 /* CustomVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomVision-Bridging-Header.h"; sourceTree = "<group>"; };
+		794275A7204C690A00E41145 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		794275A8204C690A00E41145 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		794275A9204C690B00E41145 /* ProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ProgressHUD; sourceTree = "<group>"; };
+		794275AA204C690B00E41145 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		7972666E204B3FC200AA0C05 /* Fruit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Fruit.mlmodel; sourceTree = "<group>"; };
 		7972666F204B3FC200AA0C05 /* Objects.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Objects.mlmodel; sourceTree = "<group>"; };
 		79726672204B405A00AA0C05 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../../../../Downloads/MobileNet.mlmodel; sourceTree = "<group>"; };
@@ -78,6 +86,11 @@
 				7972666E204B3FC200AA0C05 /* Fruit.mlmodel */,
 				7972666F204B3FC200AA0C05 /* Objects.mlmodel */,
 				5EBF651D1F0AA47700BCD353 /* Info.plist */,
+				794275A9204C690B00E41145 /* ProgressHUD */,
+				794275A7204C690A00E41145 /* ProgressHUD.bundle */,
+				794275AA204C690B00E41145 /* ProgressHUD.h */,
+				794275A8204C690A00E41145 /* ProgressHUD.m */,
+				794275A6204C690900E41145 /* CustomVision-Bridging-Header.h */,
 			);
 			path = CustomVision;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 				TargetAttributes = {
 					5EBF650D1F0AA47700BCD353 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -140,6 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794275AD204C690B00E41145 /* ProgressHUD in Resources */,
+				794275AB204C690B00E41145 /* ProgressHUD.bundle in Resources */,
 				5EBF651C1F0AA47700BCD353 /* LaunchScreen.storyboard in Resources */,
 				5EBF65191F0AA47700BCD353 /* Assets.xcassets in Resources */,
 				5EBF65171F0AA47700BCD353 /* Main.storyboard in Resources */,
@@ -153,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794275AC204C690B00E41145 /* ProgressHUD.m in Sources */,
 				5EBF65141F0AA47700BCD353 /* ViewController.swift in Sources */,
 				76C510BC1F1587C60049422A /* BubbleLayer.swift in Sources */,
 				76B5ACDE1F159C7500EE183D /* BubbleLabelLayer.swift in Sources */,
@@ -293,12 +310,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = VE2UR4S7KZ;
 				INFOPLIST_FILE = CustomVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nealgoyal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomVision/CustomVision-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -308,12 +328,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = VE2UR4S7KZ;
 				INFOPLIST_FILE = CustomVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.nealgoyal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomVision/CustomVision-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -20,14 +20,40 @@ class ViewController: UIViewController {
     var arraySize2 : Int = 0
     var arraySize3 : Int = 0
     var arraySize4 : Int = 0
-  
+    
+  // Labels
     @IBOutlet weak var labelOne: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     @IBOutlet weak var label4: UILabel!
     
+  // Check Marks
+    @IBAction func check1Pressed(_ sender: UIButton) {
+        labelOne.textColor = UIColor.green
+        ProgressHUD.showSuccess("Correct")
+    }
     
-  @IBOutlet weak var previewView: UIView!
+    @IBAction func check2Pressed(_ sender: UIButton) {
+        label2.textColor = UIColor.green
+        ProgressHUD.showSuccess("Correct")
+    }
+    
+    @IBAction func check3Pressed(_ sender: UIButton) {
+        label3.textColor = UIColor.green
+        ProgressHUD.showSuccess("Correct")
+    }
+    
+    @IBAction func check4Pressed(_ sender: UIButton) {
+        label4.textColor = UIColor.green
+        ProgressHUD.showSuccess("Correct")
+    }
+    
+    @IBAction func restartButtonPressed(_ sender: UIButton) {
+        updateLabels()
+    }
+    
+    
+    @IBOutlet weak var previewView: UIView!
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var lowerView: UIView!
   
@@ -94,18 +120,7 @@ class ViewController: UIViewController {
     previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
     previewView.layer.addSublayer(previewLayer)
     
-    arraySize1 = Int(arc4random_uniform(14))
-    arraySize2 = Int(arc4random_uniform(14))
-    arraySize3 = Int(arc4random_uniform(14))
-    arraySize4 = Int(arc4random_uniform(14))
-    
-    if( arraySize1 != arraySize2 && arraySize1 != arraySize3 && arraySize1 != arraySize4 &&
-        arraySize2 != arraySize3 && arraySize2 != arraySize4 && arraySize3 != arraySize4 ) {
-            labelOne.text = householdItems[arraySize1]
-            label2.text = householdItems[arraySize2]
-            label3.text = householdItems[arraySize3]
-            label4.text = householdItems[arraySize4]
-    }
+    updateLabels()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -121,6 +136,27 @@ class ViewController: UIViewController {
     super.viewDidLayoutSubviews()
     previewLayer.frame = previewView.bounds;
   }
+    
+    func updateLabels() {
+        labelOne.textColor = UIColor.white
+        label2.textColor = UIColor.white
+        label3.textColor = UIColor.white
+        label4.textColor = UIColor.white
+        
+        arraySize1 = Int(arc4random_uniform(14))
+        arraySize2 = Int(arc4random_uniform(14))
+        arraySize3 = Int(arc4random_uniform(14))
+        arraySize4 = Int(arc4random_uniform(14))
+        
+        if( arraySize1 != arraySize2 && arraySize1 != arraySize3 && arraySize1 != arraySize4 &&
+            arraySize2 != arraySize3 && arraySize2 != arraySize4 && arraySize3 != arraySize4 ) {
+            labelOne.text = householdItems[arraySize1]
+            label2.text = householdItems[arraySize2]
+            label3.text = householdItems[arraySize3]
+            label4.text = householdItems[arraySize4]
+        }
+    }
+    
   
   // MARK: Camera handling
   
