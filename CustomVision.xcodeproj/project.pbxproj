@@ -17,6 +17,7 @@
 		79726670204B3FC200AA0C05 /* Fruit.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666E204B3FC200AA0C05 /* Fruit.mlmodel */; };
 		79726671204B3FC200AA0C05 /* Objects.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7972666F204B3FC200AA0C05 /* Objects.mlmodel */; };
 		79726673204B405A00AA0C05 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79726672204B405A00AA0C05 /* MobileNet.mlmodel */; };
+		79726677204B6EC400AA0C05 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79726676204B6EC400AA0C05 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7972666E204B3FC200AA0C05 /* Fruit.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Fruit.mlmodel; sourceTree = "<group>"; };
 		7972666F204B3FC200AA0C05 /* Objects.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Objects.mlmodel; sourceTree = "<group>"; };
 		79726672204B405A00AA0C05 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../../../../Downloads/MobileNet.mlmodel; sourceTree = "<group>"; };
+		79726676204B6EC400AA0C05 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				5EBF65111F0AA47700BCD353 /* AppDelegate.swift */,
 				5EBF65131F0AA47700BCD353 /* ViewController.swift */,
+				79726676204B6EC400AA0C05 /* TableViewController.swift */,
 				5EBF65151F0AA47700BCD353 /* Main.storyboard */,
 				5EBF65181F0AA47700BCD353 /* Assets.xcassets */,
 				5EBF651A1F0AA47700BCD353 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				5EBF65141F0AA47700BCD353 /* ViewController.swift in Sources */,
 				76C510BC1F1587C60049422A /* BubbleLayer.swift in Sources */,
 				76B5ACDE1F159C7500EE183D /* BubbleLabelLayer.swift in Sources */,
+				79726677204B6EC400AA0C05 /* TableViewController.swift in Sources */,
 				5EBF65121F0AA47700BCD353 /* AppDelegate.swift in Sources */,
 				79726673204B405A00AA0C05 /* MobileNet.mlmodel in Sources */,
 				79726670204B3FC200AA0C05 /* Fruit.mlmodel in Sources */,
