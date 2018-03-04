@@ -12,9 +12,21 @@ var frameCount = 0
 let framesPerSample = 10
 var startDate = NSDate.timeIntervalSinceReferenceDate
 
-
 class ViewController: UIViewController {
+    
+    let householdItems = ["pencil", "pen", "mat", "car", "flower", "tree", "chair", "desk", "sink", "table", "water bottle", "cup", "keyboard", "cap"]
+    
+    var arraySize1 : Int = 0
+    var arraySize2 : Int = 0
+    var arraySize3 : Int = 0
+    var arraySize4 : Int = 0
   
+    @IBOutlet weak var labelOne: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
+    
+    
   @IBOutlet weak var previewView: UIView!
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var lowerView: UIView!
@@ -81,6 +93,19 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
     previewView.layer.addSublayer(previewLayer)
+    
+    arraySize1 = Int(arc4random_uniform(14))
+    arraySize2 = Int(arc4random_uniform(14))
+    arraySize3 = Int(arc4random_uniform(14))
+    arraySize4 = Int(arc4random_uniform(14))
+    
+    if( arraySize1 != arraySize2 && arraySize1 != arraySize3 && arraySize1 != arraySize4 &&
+        arraySize2 != arraySize3 && arraySize2 != arraySize4 && arraySize3 != arraySize4 ) {
+            labelOne.text = householdItems[arraySize1]
+            label2.text = householdItems[arraySize2]
+            label3.text = householdItems[arraySize3]
+            label4.text = householdItems[arraySize4]
+    }
   }
   
   override func viewDidAppear(_ animated: Bool) {
